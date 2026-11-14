@@ -1,0 +1,276 @@
+/* All general typography uses IRANSansX WOFF2. */
+@font-face {
+  font-family: 'IRANSansX';
+  src: url('/fonts/IRANSansX-Regular.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IRANSansX';
+  src: url('/fonts/IRANSansX-Medium.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IRANSansX';
+  src: url('/fonts/IRANSansX-DemiBold.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IRANSansX';
+  src: url('/fonts/IRANSansX-Bold.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IRANSansX';
+  src: url('/fonts/IRANSansX-ExtraBold.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IRANSansX';
+  src: url('/fonts/IRANSansX-Black.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+}
+
+:root {
+  font-family: 'IRANSansX', Tahoma, Arial, sans-serif;
+  color: #17221d;
+  background: #fff;
+  font-synthesis: none;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  min-width: 320px;
+}
+img {
+  max-width: 100%;
+}
+.quick-art {
+  height: 125px;
+  border-radius: 65px;
+  background: radial-gradient(circle at 58% 50%,#cfefe2 0 42%,#eff8f4 43% 65%,#fff 66%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0a5851;
+  position: relative;
+}
+.quick-bubble {
+  position: absolute;
+  bottom: 3px;
+  right: 10%;
+  background: #effaf6;
+  border-radius: 50%;
+  box-shadow: 0 3px 9px #0002;
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+}
+.about-image-placeholder {
+  border-radius: 30px;
+  height: 330px;
+  background: linear-gradient(145deg,#e6f3ee,#b8d8cc);
+  border: 2px dashed #89af9e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+  color: #356857;
+  font-weight: 700;
+}
+.about-image-placeholder small {
+  font-weight: 400;
+}
+.service-list {
+  display: grid;
+  grid-template-columns: repeat(6,minmax(0,1fr));
+  gap: 22px;
+}
+.doctor-list {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 35px;
+}
+.portrait-placeholder {
+  height: 170px;
+  background: linear-gradient(120deg,#e7f7f3,#c8eade);
+  border-radius: 18px;
+  color: #418475;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+.missing-note {
+  font-size: 12px;
+  color: #777;
+  text-align: center;
+  margin-top: 20px;
+}
+.insurance-list {
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  gap: 22px;
+}
+.insurance-placeholder {
+  height: 110px;
+  border-radius: 15px;
+  border: 1px dashed #86b4a5;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  font-size: 12px;
+  color: #477367;
+  background: #f8fcfa;
+}
+.article-list {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+}
+.article-card {
+  border-radius: 21px;
+  box-shadow: 0 4px 14px #0002;
+  padding: 16px;
+}
+.article-placeholder {
+  height: 180px;
+  border-radius: 16px;
+  background: linear-gradient(140deg,#f2faf5 40%,#a4dac7 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: #246b56;
+}
+.article-card h3 {
+  font-size: 15px;
+}
+.article-card a {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #005b3c;
+}
+.footer {
+  position: relative;
+  background: linear-gradient(125deg,#0d9b76,#006a4e 40%,#004b38);
+  color: #fff;
+  margin-top: 70px;
+  padding: 80px 28px 60px;
+}
+.footer-wave {
+  position: absolute;
+  top: -35px;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background: #fff;
+  border-radius: 0 0 50% 38%/0 0 55% 48%;
+}
+.footer-inner {
+  max-width: 1260px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 45px;
+}
+.footer-inner>div {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.footer h3 {
+  font-size: 16px;
+  margin: 0 0 10px;
+}
+.footer a,.footer p {
+  font-size: 13px;
+  line-height: 2;
+  margin: 0;
+}
+.footer img {
+  width: 80px;
+  background: #fff;
+  border-radius: 50%;
+}
+.map-placeholder {
+  background: #e3efe7;
+  color: #1d6651;
+  padding: 45px 10px;
+  text-align: center;
+  border-radius: 13px;
+  font-size: 12px;
+}
+@media (max-width:760px) {
+  .quick-art {
+    height: 96px;
+  }
+  .quick-art>svg {
+    width: 49px;
+  }
+  .quick-bubble {
+    height: 30px;
+    width: 30px;
+  }
+  .quick-bubble svg {
+    width: 17px;
+  }
+  .about-image-placeholder {
+    height: 240px;
+  }
+  .service-list {
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+  }
+  .doctor-list {
+    grid-template-columns: repeat(2,1fr);
+    gap: 12px;
+  }
+  .portrait-placeholder {
+    height: 115px;
+  }
+  .insurance-list {
+    grid-template-columns: repeat(3,1fr);
+    gap: 8px;
+  }
+  .insurance-placeholder {
+    height: 80px;
+  }
+  .article-list {
+    grid-template-columns: 1fr;
+  }
+  .footer-inner {
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+  }
+  .footer {
+    padding: 65px 18px 40px;
+  }
+}

@@ -1,0 +1,88 @@
+/* Measured against the three supplied 1500px-tall reference images. */
+.reference-directory{--row-gap:28px;padding-bottom:18px}
+.reference-directory .rd-hero{max-height:400px}
+.reference-doctors .rd-search{gap:12px;padding:18px 26px;min-height:76px}
+.reference-doctors .rd-query{height:36px}
+.reference-doctors .rd-search select{height:36px;padding-block:6px;min-width:138px}
+.reference-doctors .rd-search>.rd-primary{height:36px;min-width:63px;padding:6px 12px}
+.reference-directory .rd-rows{gap:var(--row-gap)}
+.reference-services{--row-gap:40px}
+.reference-insurance{--row-gap:24px}
+.reference-directory .rd-rows article{border-radius:8px;border-color:#f0f0f0;box-shadow:0 0 7px 3px #0000001c}
+.reference-directory .rd-service-row{min-height:104px;gap:30px;padding:0 7px}
+.reference-directory .rd-service-row>img{height:102px;width:29.5%;border-radius:13px}
+.reference-directory .rd-service-row h2{font-size:23px;font-weight:700;line-height:1.6;margin-bottom:6px}
+.reference-directory .rd-service-row p{font-size:16px;line-height:1.8}
+.reference-directory .rd-doctor-row{min-height:81px;padding:8px 18px;gap:13px}
+.reference-directory .rd-doctor-row>img{height:62px;width:65px}
+.reference-directory .rd-doctor-info h2{font-size:15px;line-height:1.7}
+.reference-directory .rd-doctor-info p{font-size:11px;line-height:1.7}
+.reference-directory .rd-doctor-info small{display:block;font-size:8px;line-height:1.7}
+.reference-directory .rd-doctor-actions{gap:16px}
+.reference-directory .rd-doctor-actions>a{min-width:163px;height:35px;padding:6px 20px}
+.reference-directory .rd-doctor-actions>button{height:35px;min-width:88px;padding:6px 20px;font-weight:600}
+.reference-directory .rd-toolbar select{height:33px;min-width:180px;padding:6px 12px}
+.reference-directory .rd-toolbar{min-height:33px}
+.reference-doctors .rd-toolbar{margin-bottom:22px}
+.reference-doctors .rd-result-note{margin:24px 28px 0;line-height:20px}
+.reference-directory .rd-insurance-row{min-height:60px;padding:4px 12px}
+.reference-insurance .rd-search{width:85%;min-height:52px;padding:4px}
+.reference-insurance .rd-search>.rd-primary,.reference-insurance .rd-search .rd-query{height:44px}
+.reference-insurance .rd-tabs{margin-top:-9px;margin-bottom:20px}
+.reference-insurance .rd-tabs button{height:30px;padding:4px 14px}
+.reference-insurance .rd-table-head{grid-template-columns:1.8fr 1fr 1fr;line-height:20px;margin-bottom:24px}
+.reference-insurance .rd-insurer h2{font-size:12px}
+.reference-insurance .rd-insurance-notes{margin:44px 6px 0;gap:32px}
+.reference-insurance .rd-insurance-notes>section{min-height:143px;padding:16px 20px;border-radius:14px}
+.reference-insurance .rd-insurance-notes h2{font-size:16px;margin-bottom:10px}
+.reference-insurance .rd-insurance-notes p{font-size:12px;margin:10px 0 23px;line-height:1.65}
+.reference-insurance .rd-insurance-notes ul{font-size:11px;line-height:1.9;list-style-position:inside;padding:0}
+.reference-insurance .rd-insurance-notes li::marker{color:#005a39}
+.reference-insurance .rd-insurance-notes .rd-primary{height:29px;min-height:29px;padding:4px 23px}
+.reference-directory .rd-primary:hover{background:#084c34}
+.reference-directory button:focus-visible,.reference-directory a:focus-visible,.reference-directory select:focus-visible{outline:2px solid #137957;outline-offset:3px}
+@media(min-width:1101px){
+ .reference-directory .rd-content{margin-top:40px}
+ .reference-doctors .rd-content{margin-top:30px}
+ .reference-insurance .rd-content{margin-top:26px}
+ .reference-services{--row-gap:28px}
+}
+@media(max-width:649px){
+ .reference-directory .rd-hero{height:200px;min-height:0;background-size:cover;background-position:center}
+ .reference-directory .rd-search{width:94%;padding:10px;gap:8px;min-height:0;flex-wrap:wrap}
+ .reference-directory .rd-query{flex-basis:100%}
+ .reference-services .rd-query,.reference-insurance .rd-query{flex-basis:0}
+ .reference-services .rd-search,.reference-insurance .rd-search{padding:4px;flex-wrap:nowrap}
+ .reference-directory .rd-query{height:38px;padding-inline:9px}
+ .reference-directory .rd-query input{font-size:10px}
+ .reference-directory .rd-search>.rd-primary{height:38px;min-width:66px;padding:6px 10px;font-size:12px}
+ .reference-doctors .rd-search select{height:33px;min-width:0;font-size:10px;flex:1}
+ .reference-doctors .rd-search>.rd-primary{height:33px;min-width:59px;font-size:11px}
+ .reference-directory .rd-content{width:92%;margin-top:30px}
+ .reference-insurance .rd-content{margin-top:25px}
+ .reference-directory .rd-search::after{height:25px}
+ .reference-directory .rd-toolbar{gap:8px;margin-bottom:16px}
+ .reference-directory .rd-toolbar strong{font-size:11px}
+ .reference-directory .rd-toolbar select{min-width:130px;font-size:9px;height:30px}
+ .reference-directory .rd-rows{gap:18px}
+ .reference-directory .rd-service-row{gap:10px;min-height:88px;padding:0 5px}
+ .reference-directory .rd-service-row>img{width:30%;height:86px;border-radius:9px}
+ .reference-directory .rd-service-row h2{font-size:16px;margin-bottom:4px}
+ .reference-directory .rd-service-row p{font-size:10px;line-height:1.8}
+ .reference-directory .rd-service-row>button{padding:5px;margin-left:0}
+ .reference-directory .rd-doctor-row{min-height:0;gap:7px;padding:10px;flex-wrap:wrap}
+ .reference-directory .rd-doctor-row>img{width:53px;height:52px}
+ .reference-directory .rd-doctor-info h2{font-size:13px}
+ .reference-directory .rd-doctor-actions{width:100%;gap:10px;justify-content:flex-end}
+ .reference-directory .rd-doctor-actions>a{min-width:132px;height:32px;font-size:12px}
+ .reference-directory .rd-doctor-actions>button{min-width:75px;height:32px;font-size:11px}
+ .reference-insurance .rd-tabs{gap:10px;margin-bottom:20px}
+ .reference-insurance .rd-tabs button{font-size:11px;padding:4px 8px}
+ .reference-insurance .rd-table-head{font-size:10px;margin-bottom:16px;grid-template-columns:1.65fr .8fr 1fr}
+ .reference-directory .rd-insurance-row{min-height:57px;padding:4px 7px}
+ .reference-insurance .rd-insurer{gap:5px}
+ .reference-insurance .rd-insurer h2{font-size:10px}
+ .reference-insurance .rd-insurance-notes{grid-template-columns:1fr;margin:26px 0 0;gap:17px}
+ .reference-insurance .rd-insurance-notes>section{min-height:128px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}

@@ -1,0 +1,214 @@
+/* صفحه‌ی «خدمات» (/services) */
+.services-search {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 90%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 18px 28px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px #0002;
+}
+
+.services-query {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+  min-width: 0;
+  background: white;
+  border: 1px solid #f2f2f2;
+  border-radius: 6px;
+  padding: 0 14px;
+  height: 43px;
+}
+
+.services-query input {
+  width: 100%;
+  min-width: 0;
+  border: 0;
+  outline: none;
+  background: transparent;
+  font: inherit;
+  font-size: 12px;
+  color: #263b32;
+}
+
+.services-query:focus-within {
+  outline: 2px solid #117653;
+  outline-offset: 2px;
+}
+
+.services-toolbar select {
+  background: white;
+  border: 1px solid #ececec;
+  border-radius: 6px;
+  padding: 9px 12px;
+  font: inherit;
+  box-shadow: 0 2px 6px #0002;
+  min-width: 190px;
+  font-size: 11px;
+  color: #8b8f91;
+}
+
+.services-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #005a39;
+  color: #fff!important;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px 24px;
+  text-decoration: none;
+  font: inherit;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.services-content {
+  position: relative;
+  z-index: 2;
+  width: 90%;
+  max-width: 1180px;
+  margin: 54px auto 0;
+}
+
+.services-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  gap: 15px;
+}
+
+.services-toolbar strong {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.services-rows {
+  display: grid;
+  gap: 30px;
+}
+
+.services-rows article {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 9px 3px #0002;
+  border: 1px solid #eee;
+  min-width: 0;
+}
+
+.services-rows h2 {
+  margin: 0;
+}
+
+.services-rows p {
+  margin: 0;
+}
+
+.services-row {
+  display: flex;
+  align-items: center;
+  min-height: 104px;
+  padding: 0 7px;
+  gap: 30px;
+}
+
+.services-row>img {
+  width: 29%;
+  height: 104px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+.services-row>div {
+  flex: 1;
+}
+
+.services-row h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.services-row p {
+  font-size: 16px;
+  color: #282b29;
+}
+
+.services-row>button {
+  margin-left: 20px;
+  border: 0;
+  background: none;
+  color: #174b2d;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.services-empty {
+  text-align: center;
+  padding: 40px;
+  color: #69776f;
+}
+
+@media (min-width:1100px) {
+  .services-row {
+    min-height: 135px;
+  }
+  .services-row>img {
+    height: 135px;
+  }
+}
+
+@media (max-width:600px) {
+  .services-search {
+    width: 94%;
+    padding: 12px;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .services-query {
+    flex-basis: 100%;
+  }
+  .services-primary {
+    padding: 10px 18px;
+  }
+  .services-content {
+    width: 92%;
+    margin-top: 25px;
+  }
+  .services-toolbar strong {
+    font-size: 12px;
+  }
+  .services-toolbar select {
+    min-width: 130px;
+    font-size: 10px;
+  }
+  .services-row {
+    gap: 12px;
+    min-height: 92px;
+  }
+  .services-row>img {
+    width: 30%;
+    height: 90px;
+  }
+  .services-row h2 {
+    font-size: 18px;
+  }
+  .services-row p {
+    font-size: 11px;
+    line-height: 1.9;
+  }
+  .services-row>button {
+    margin-left: 0;
+  }
+  .services-rows {
+    gap: 22px;
+  }
+}

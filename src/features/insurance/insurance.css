@@ -1,0 +1,295 @@
+/* صفحه‌ی «بیمه‌ها» (/insurance) */
+.insurance-search {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 90%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 18px 28px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px #0002;
+}
+
+.insurance-query {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+  min-width: 0;
+  background: white;
+  border: 1px solid #f2f2f2;
+  border-radius: 6px;
+  padding: 0 14px;
+  height: 43px;
+}
+
+.insurance-query input {
+  width: 100%;
+  min-width: 0;
+  border: 0;
+  outline: none;
+  background: transparent;
+  font: inherit;
+  font-size: 12px;
+  color: #263b32;
+}
+
+.insurance-query:focus-within {
+  outline: 2px solid #117653;
+  outline-offset: 2px;
+}
+
+.insurance-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #005a39;
+  color: #fff!important;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px 24px;
+  text-decoration: none;
+  font: inherit;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.insurance-content {
+  position: relative;
+  z-index: 2;
+  width: 90%;
+  max-width: 1180px;
+  margin: 54px auto 0;
+}
+
+.insurance-rows {
+  display: grid;
+  gap: 30px;
+}
+
+.insurance-rows article {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 9px 3px #0002;
+  border: 1px solid #eee;
+  min-width: 0;
+}
+
+.insurance-rows h2 {
+  margin: 0;
+}
+
+.insurance-rows p {
+  margin: 0;
+}
+
+.insurance-tabs {
+  display: flex;
+  justify-content: flex-start;
+  gap: 25px;
+  margin: -9px 0 22px;
+}
+
+.insurance-tabs button {
+  width: 22%;
+  padding: 7px 14px;
+  border: 0;
+  border-radius: 7px;
+  background: white;
+  box-shadow: 0 1px 9px #0003;
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.insurance-tabs button[aria-pressed=true] {
+  background: #005a39;
+  color: white;
+}
+
+.insurance-table-head {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr 1fr;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.insurance-row {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr 1fr;
+  align-items: center;
+  min-height: 60px;
+  padding: 5px 12px;
+  text-align: center;
+}
+
+.insurance-provider {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.insurance-provider img {
+  width: 50px;
+  height: 46px;
+  object-fit: contain;
+}
+
+.insurance-provider h2 {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.insurance-row p {
+  font-size: 13px;
+}
+
+.insurance-row>button {
+  justify-self: center;
+  background: #e4f3e9;
+  color: #123d29;
+  border: 0;
+  border-radius: 6px;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 2px 17px;
+  cursor: pointer;
+}
+
+.insurance-notes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px;
+  margin: 45px 6px 20px;
+}
+
+.insurance-notes>section {
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  box-shadow: 0 0 10px 2px #0002;
+  border-radius: 16px;
+  position: relative;
+  display: block;
+  padding: 20px;
+  min-height: 145px;
+}
+
+.insurance-notes svg {
+  color: #17513f;
+  flex-shrink: 0;
+}
+
+.insurance-notes p {
+  text-align: center;
+  margin: 8px 0 22px;
+  padding-right: 40px;
+  font-size: 12px;
+}
+
+.insurance-notes h2 {
+  font-size: 17px;
+  margin: 0 0 12px;
+  color: #194736;
+  padding-right: 42px;
+}
+
+.insurance-notes ul {
+  line-height: 2;
+  margin: 0;
+  padding-right: 14px;
+  font-size: 11px;
+}
+
+.insurance-notes .insurance-primary {
+  font-size: 12px;
+  padding: 6px 24px;
+}
+
+.insurance-notes section:first-child>div {
+  text-align: center;
+}
+
+.insurance-empty {
+  text-align: center;
+  padding: 40px;
+  color: #69776f;
+}
+
+.insurance-notes>section>svg {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}
+
+@media (min-width:1100px) {
+  .insurance-row {
+    min-height: 80px;
+  }
+}
+
+@media (max-width:600px) {
+  .insurance-search {
+    width: 94%;
+    padding: 12px;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .insurance-query {
+    flex-basis: 100%;
+  }
+  .insurance-primary {
+    padding: 10px 18px;
+  }
+  .insurance-content {
+    width: 92%;
+    margin-top: 25px;
+  }
+  .insurance-rows {
+    gap: 22px;
+  }
+  .insurance-tabs {
+    gap: 12px;
+  }
+  .insurance-tabs button {
+    flex: 1;
+    width: auto;
+  }
+  .insurance-row {
+    grid-template-columns: 1.65fr .8fr 1fr;
+  }
+  .insurance-table-head {
+    grid-template-columns: 1.65fr .8fr 1fr;
+    font-size: 11px;
+  }
+  .insurance-provider {
+    gap: 7px;
+  }
+  .insurance-provider img {
+    width: 35px;
+  }
+  .insurance-provider h2 {
+    font-size: 10px;
+  }
+  .insurance-row p {
+    font-size: 10px;
+  }
+  .insurance-row>button {
+    font-size: 9px;
+    padding: 4px 5px;
+  }
+  .insurance-notes {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .insurance-notes>section {
+    min-height: 130px;
+  }
+}

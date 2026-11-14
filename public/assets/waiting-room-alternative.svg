@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" role="img" aria-label="نمای مفهومی سالن انتظار">
+  <defs>
+    <linearGradient id="wall" x2="0" y2="1"><stop stop-color="#f7f7f0"/><stop offset="1" stop-color="#e5eee8"/></linearGradient>
+    <linearGradient id="floor" x2="0" y2="1"><stop stop-color="#ddd6c8"/><stop offset="1" stop-color="#b6a996"/></linearGradient>
+    <linearGradient id="window" x2="0" y2="1"><stop stop-color="#d1f0f0"/><stop offset="1" stop-color="#f6faf3"/></linearGradient>
+    <filter id="shadow"><feGaussianBlur stdDeviation="11"/></filter>
+  </defs>
+  <rect width="1000" height="620" fill="url(#wall)"/>
+  <path d="M0 390H1000V620H0Z" fill="url(#floor)"/>
+  <path d="M0 390H1000" stroke="#a8b8aa" stroke-width="8"/>
+  <path d="M640 50H948V363H640Z" fill="#fefefe" stroke="#c2d5ce" stroke-width="15"/>
+  <path d="M654 62H934V350H654Z" fill="url(#window)"/>
+  <path d="M793 63V350M654 235H934" stroke="#e6f5f0" stroke-width="12"/>
+  <path d="M668 347V278L720 239L755 264L819 199L927 282V347" fill="#b0d5c4" opacity=".65"/>
+  <path d="M661 344V309L729 280L788 322L844 267L935 322V348" fill="#86b9a6" opacity=".55"/>
+  <path d="M32 73H470V322H32Z" fill="#fcfbf8" stroke="#dce7df" stroke-width="11"/>
+  <path d="M61 110H441" stroke="#e8eee8" stroke-width="5"/>
+  <rect x="105" y="145" width="255" height="112" rx="8" fill="#edf5ef"/>
+  <circle cx="232" cy="199" r="38" fill="#6ca591"/>
+  <path d="M216 201H249M232 183V218" stroke="#fff" stroke-width="9" stroke-linecap="round"/>
+  <rect x="50" y="317" width="425" height="24" rx="4" fill="#b0a48f"/>
+  <rect x="76" y="341" width="372" height="92" fill="#eadfcd"/>
+  <path d="M92 354H433" stroke="#c5baa7" stroke-width="3"/>
+  <ellipse cx="733" cy="534" rx="280" ry="25" fill="#665d53" opacity=".17" filter="url(#shadow)"/>
+  <rect x="527" y="390" width="156" height="87" rx="22" fill="#2e8077"/>
+  <rect x="529" y="376" width="156" height="45" rx="18" fill="#42968b"/>
+  <rect x="522" y="472" width="18" height="83" rx="5" fill="#5e6863"/>
+  <rect x="665" y="472" width="18" height="83" rx="5" fill="#5e6863"/>
+  <rect x="736" y="390" width="160" height="87" rx="22" fill="#357f79"/>
+  <rect x="738" y="376" width="160" height="45" rx="18" fill="#56a399"/>
+  <rect x="731" y="472" width="18" height="83" rx="5" fill="#5e6863"/>
+  <rect x="879" y="472" width="18" height="83" rx="5" fill="#5e6863"/>
+  <rect x="479" y="322" width="31" height="115" rx="5" fill="#957e65"/>
+  <path d="M496 335C430 300 426 246 463 232C467 272 487 286 496 335Z" fill="#548e71"/>
+  <path d="M494 322C512 275 565 246 587 267C537 294 522 315 494 322Z" fill="#70a88d"/>
+  <path d="M495 322C459 280 480 239 500 226C511 270 496 296 495 322Z" fill="#3f7f69"/>
+  <rect x="465" y="417" width="61" height="50" rx="9" fill="#faf8f1"/>
+  <path d="M49 579L1000 579" stroke="#c9bcaa" stroke-width="3" opacity=".55"/>
+</svg>

@@ -1,0 +1,29 @@
+/* Plain-photo heroes: keep page titles available to assistive technology. */
+.inner-page .inner-hero::after {
+  background: none;
+}
+
+.inner-page .inner-hero-overlay,
+.insurance-design .id-hero > div,
+.contact-reference .cr-hero-overlay {
+  position: absolute;
+  width: 1px;
+  max-width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.inner-page .inner-hero-overlay :is(span, h1, h2, p),
+.insurance-design .id-hero > div :is(h1, h2, p),
+.contact-reference .cr-hero-overlay :is(span, h1, p) {
+  color: #202728;
+}
+

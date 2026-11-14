@@ -1,0 +1,67 @@
+:root {
+  --site-content-width: 1180px;
+  --site-section-space: clamp(28px, 3vw, 42px);
+  --site-card-radius: 16px;
+  --site-card-border: #e5eee9;
+  --site-card-shadow: 0 8px 28px rgb(18 69 48 / 9%);
+}
+
+/* The same surface treatment across the home and inner pages. */
+.reference-directory .rd-rows article,
+.contact-reference .cr-cards article,
+.inner-page .final-directory-grid article {
+  border: 1px solid var(--site-card-border);
+  border-radius: var(--site-card-radius);
+  background-color: #fff;
+  box-shadow: var(--site-card-shadow);
+}
+
+.reference-directory .rd-rows article,
+.contact-reference .cr-cards article,
+.inner-page .final-directory-grid article {
+  transition: box-shadow .2s ease, transform .2s ease;
+}
+
+@media (hover: hover) {
+  .reference-directory .rd-rows article:hover,
+  .contact-reference .cr-cards article:hover,
+  .inner-page .final-directory-grid article:hover {
+    box-shadow: 0 14px 34px rgb(18 69 48 / 14%);
+  }
+}
+
+.reference-directory .rd-content,
+.contact-reference .cr-container,
+.inner-page .page-container {
+  margin-top: var(--site-section-space);
+}
+
+.reference-directory .rd-rows,
+.contact-reference .cr-cards,
+.inner-page .final-directory-grid {
+  gap: clamp(16px, 2vw, 24px);
+}
+
+.reference-directory .rd-service-row > img {
+  border-radius: var(--site-card-radius);
+}
+
+@media (max-width: 760px) {
+  :root {
+    --site-section-space: 24px;
+    --site-card-radius: 14px;
+  }
+
+  .reference-directory .rd-content,
+  .contact-reference .cr-container {
+    margin-top: var(--site-section-space);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reference-directory .rd-rows article,
+  .contact-reference .cr-cards article,
+  .inner-page .final-directory-grid article {
+    transition: none;
+  }
+}

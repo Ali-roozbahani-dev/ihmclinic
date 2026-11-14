@@ -1,0 +1,73 @@
+/* One visual frame for every route hero. Keep the wave inside the frame. */
+:root {
+  --site-hero-height: clamp(280px, 31vw, 420px);
+  --site-hero-wave-height: clamp(95px, 15vw, 185px);
+}
+
+.reference-directory .rd-hero,
+.contact-reference .cr-hero,
+.inner-page .inner-hero {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  height: var(--site-hero-height);
+  min-height: var(--site-hero-height);
+  max-height: none;
+  overflow: hidden;
+  border-radius: 0;
+}
+
+.reference-directory .rd-hero {
+  background-size: cover;
+  background-position: center;
+}
+
+.reference-doctors .rd-hero {
+  background-image: url('/images/doctors/doctors-hero-photo.jpg');
+  background-position: center 44%;
+}
+
+.reference-services .rd-hero {
+  background-image: url('/images/shared/about-clinic-waiting.jpg');
+  background-position: center 52%;
+}
+
+.reference-insurance .rd-hero {
+  background-image: url('/images/shared/insurance-hero-pro.png');
+  background-position: center 48%;
+}
+
+.reference-directory .rd-hero::after,
+.contact-reference .cr-hero::after,
+.inner-page .inner-hero::after {
+  position: absolute;
+  inset: auto 0 0;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: var(--site-hero-wave-height);
+  pointer-events: none;
+}
+
+.reference-directory .rd-hero::after,
+.contact-reference .cr-hero::after,
+.inner-page .inner-hero::after {
+  content: '';
+  background: url('/images/shared/hero-wave-mint.png') center bottom / 100% 100% no-repeat;
+}
+
+@media (max-width: 760px) {
+  :root {
+    --site-hero-height: clamp(220px, 58vw, 290px);
+    --site-hero-wave-height: clamp(72px, 22vw, 115px);
+  }
+
+  .reference-directory .rd-hero {
+    background-size: cover;
+  }
+
+  .contact-reference .cr-hero,
+  .inner-page .inner-hero {
+    border-radius: 0;
+  }
+}
